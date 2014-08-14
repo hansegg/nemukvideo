@@ -1,44 +1,328 @@
-<div class="jumbotron">
-    <h1><?php echo sprintf($this->translate('Welcome to %sZend Framework 2%s'), '<span class="zf-green">', '</span>') ?></h1>
-    <p><?php echo sprintf($this->translate('Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2.'), '<a href="https://github.com/zendframework/ZendSkeletonApplication" target="_blank">', '</a>', \Zend\Version\Version::VERSION) ?></p>
-    <p><a class="btn btn-success btn-lg" href="https://github.com/zendframework/zf2" target="_blank"><?php echo $this->translate('Fork Zend Framework 2 on GitHub') ?> &raquo;</a></p>
+<?php $this->headTitle('Sags mit Video') ?>
+<!-- Video intro-video -->
+<script type="application/javascript">
+    var autoplay = "<?= $this->autoplay ?>";
+</script>
+<div class="section green-bg hidden-xs" id="first-section">
+    <div id="intro-video-container">
+        <video class="visible-xs" id="intro-video-xs" poster="/video/Nemuk_Showreel-HD.jpg" src="">
+        </video>
+        <video class="visible-sm" id="intro-video-sm" poster="/video/Nemuk_Showreel-HD.jpg" src="">
+        </video>
+        <video class="visible-md visible-lg" id="intro-video" muted="muted" poster="/video/Nemuk_Showreel-HD.jpg" <?=
+        $this->autoplay == 'off' ? '' : ' autoplay="autoplay" ' ?>
+               src="">
+        </video>
+
+        <div id="intro-video-gradient"></div>
+
+        <span id="intro-play-2"
+              class="streamline-120px red icon-play-2 hidden-xs <?= $this->autoplay == 'on' ? ' hidden' : '' ?>"
+              onclick=""></span>
+
+
+        <div class="text-center" id="video-overlay">
+            <h1 class="white">Nemuk.</h1>
+
+            <h2 class="subtitle green">Wir machen Ihr Video</h2>
+
+            <h3 class="subtitle no-margin">
+                <a class="yellow" href="#why-onlinevideo">
+                    Erfahren Sie, wie <br/>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h3>
+
+            <div id="video-control" <?= $this->autoplay == 'off' ? ' class="hidden"' : '' ?>>
+                  <span class="streamline-60px red yellow icon-volume-mute-1 hidden-xs"
+                        onclick="document.getElementById('intro-video').muted=true"></span>
+                  <span class="streamline-60px red yellow icon-volume-medium-1 hidden-xs"
+                        onclick="document.getElementById('intro-video').muted=false"></span>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="row">
+<!-- 1 Sags mit Video -->
+<div class="section green-bg" id="why-onlinevideo">
+    <div class="container">
+        <div class="row">
+            <div class="text-center visible-xs">
+                <video width="100%" src="/video/Showreel+All+Styles-Mobil.mp4" controls="controls"></video>
+            </div>
+            <div class="spacer-6em"></div>
+            <div class="col-md-12 text-center">
+                <h1 class="thin" style="padding-bottom: 60px;"><?= $this->translate('Sags mit Video') ?></h1>
+            </div>
+            <div class="col-md-4 text-center">
+                <span class="streamline-120px red icon-bubble-conversation-5"></span>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Follow Development') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!'), '<a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">', '</a>', '<a href="http://framework.zend.com/zf2/blog">', '</a>', '<a href="https://github.com/zendframework/zf2/issues">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://framework.zend.com/zf2" target="_blank"><?php echo $this->translate('ZF2 Development Portal') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
+                <h3><a class="underline black"
+                       href="/index/your-benefits"><?= $this->translate('Mehr Bekanntheit') ?></a></h3>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Discover Modules') ?></h3>
+                <p>5 Facts, wieso Sie mit Videos besser in Erinnerung bleiben.</p>
             </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
+            <div class="col-md-4 text-center">
+                <span class="streamline-120px red icon-transfer-12"></span>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Help &amp; Support') ?></h3>
+                <h3><a class="underline black"
+                       href="/index/your-benefits#more-traffic"><?= $this->translate('Mehr Traffic') ?>
+                        (SEO)</a></h3>
+
+                <p>3 Tricks, wie Sie dank Videos deutlich bessere Klickraten auf Ihrer Page erzielen.</p>
             </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We\'d love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s.'), '<a href="irc://irc.freenode.net/zftalk">', '</a>', '<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://webchat.freenode.net?channels=zftalk" target="_blank"><?php echo $this->translate('Ping us on IRC') ?> &raquo;</a></p>
+            <div class="col-md-4 text-center">
+                <span class="streamline-120px red icon-chart-up "></span>
+
+                <h3><a class="underline black"
+                       href="/index/your-benefits#more-sale"><?= $this->translate('Mehr Verkaufserfolg') ?></a>
+                </h3>
+
+                <p>6 Tipps, wie Sie mit Videos Ihr Unternehmen und Ihre Produkte nach aussen und innen besser
+                    verkaufen.</p>
             </div>
         </div>
     </div>
 </div>
+
+<!-- 2 Nemuk Video -->
+<div class="section yellow-bg">
+    <div class="container">
+        <div class="row">
+            <!-- left -->
+            <div class="col-md-6">
+                <h1 class="thin">Nemuk.</h1>
+
+                <p class="subtitle green">Ihr Partner für Video</p>
+
+                <p class="lead">Nach über 100 Videos für bekannte Brands wie Swisscom, SBB, Suva, Swissaid, WWF etc.
+                    gelten wir als zuverlässige Adresse unter den Schweizer Video-Machern.</p>
+
+                <p class="subtitle">
+                    <a href="/index/about" class="underline black"><?= $this->translate('Über uns') ?></a>
+                </p>
+
+                <div class="spacer"></div>
+            </div>
+
+            <!-- right -->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="spacer"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-xs-3">
+                        <span class="streamline-90px red icon-palette "></span>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3><?= $this->translate('individuell') ?></h3>
+
+                        <p>Vielfältige Ausdrucksmöglichkeiten dank den besten Partnern und Spezialisten.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="spacer"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-xs-3">
+                        <span class="streamline-90px red icon-calculator-2 "></span>
+                    </div>
+                    <div class="col-xs-8">
+                        <div>
+                            <h3><?= $this->translate('preisgünstig') ?></h3>
+
+                            <p>Moderne Ausrüstung und effiziente Arbeitsabläufe erlauben Top-Filme auch für kleine
+                                Budgets.</p>
+                        </div>
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="spacer"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-xs-3">
+                        <span class="streamline-90px red icon-location "></span>
+                    </div>
+                    <div class="col-xs-8">
+                        <div>
+                            <h3><?= $this->translate('kompetent') ?></h3>
+
+                            <p>Ob Grossunternehmen, KMU oder NGO – dank unserer breiten Erfahrung finden wir die
+                                richtige Sprache.</p>
+                        </div>
+                        <div class="spacer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3 Videostile -->
+<div class="section green-bg">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="thin"><?= $this->translate('Die Videostile') ?></h1>
+
+                <div class="spacer-6em"></div>
+            </div>
+        </div>
+
+        <div class="row video-style">
+            <div class="col-md-6">
+                <div class="video-container">
+                    <img class="video-placeholder shadow" width="100%" src="/video/Simplify_479000206_1280.jpg"
+                         alt="Simplify Erklärvideo Standbild"/>
+                    <img class="video-placeholder" width="100%" src="/video/Play.png" alt="playbutton"/>
+                    <iframe class="hidden shadow"
+                            url="//player.vimeo.com/video/95869954?autoplay=1;title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff"
+                            width="100%" height="310" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                            allowfullscreen></iframe>
+                </div>
+                <h4 class="text-center subtitle video-legend">
+                    <a href="/index/video-styles/simplify"
+                       class="underline black"><?= $this->translate('Simplify Erklärvideo') ?></a>
+                </h4>
+            </div>
+
+            <div class="col-md-6">
+                <div class="video-container">
+                    <img class="video-placeholder shadow" width="100%"
+                         src="/video/Animation_MotionGraphics_479006329_1280.jpg"
+                         alt="Standbild Animation und Motion Graphics"/>
+                    <img class="video-placeholder" width="100%" src="/video/Play.png" alt="playbutton"/>
+                    <iframe class="hidden shadow"
+                            url="//player.vimeo.com/video/96589106?autoplay=1;title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff"
+                            width="100%" height="310" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                            allowfullscreen></iframe>
+                </div>
+                <h4 class="text-center subtitle video-legend">
+                    <a href="/index/video-styles/animation-mg"
+                       class="underline black"><?= $this->translate('Animation und Motion Graphics') ?></a>
+                </h4>
+            </div>
+
+            <div class="col-md-6">
+                <div class="video-container">
+                    <img class="video-placeholder shadow" width="100%" src="/video/Realfilm_479006803_1280.jpg"
+                         alt="Realfilm Standbild"/>
+                    <img class="video-placeholder" width="100%" src="/video/Play.png" alt="playbutton"/>
+                    <iframe class="hidden shadow"
+                            url="//player.vimeo.com/video/99020222?autoplay=1;title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff"
+                            width="100%" height="310" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                            allowfullscreen></iframe>
+                </div>
+                <h4 class="text-center subtitle video-legend">
+                    <a href="/index/video-styles/real"
+                       class="underline black"><?= $this->translate('Realfilm') ?></a>
+                </h4>
+            </div>
+
+            <div class="col-md-6">
+                <div class="video-container">
+                    <img class="video-placeholder shadow" width="100%"
+                         src="/video/Animation_Real_479006568_1280.jpg"
+                         alt="Animation und Realfilm Standbild"/>
+                    <img class="video-placeholder" width="100%" src="/video/Play.png" alt="playbutton"/>
+                    <iframe class="hidden shadow"
+                            url="//player.vimeo.com/video/99019888?autoplay=1;title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff"
+                            width="100%" height="310" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                            allowfullscreen></iframe>
+                </div>
+                <h4 class="text-center subtitle video-legend">
+                    <a href="/index/video-styles/animation-real"
+                       class="underline black"><?= $this->translate('Animation und Realfilm') ?></a>
+                </h4>
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+    <!-- container -->
+</div>
+
+<!-- Testimonials -->
+<div class="section yellow-bg">
+    <div class="container big-padding">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="thin">«Ihr habt es mal wieder geschafft!»</h1>
+                <h4 class="subtitle green">Über 100 Videos und viele glückliche Kunden.</h4>
+            </div>
+        </div>
+
+
+        <div class="row" id="testimonial1">
+            <div class="testimonial-container">
+                <span class="streamline-60px icon-arrow-67 testimonial-switch test3nav green"></span>
+
+                <div class="testimonial-cell">
+                    <p class="red text-left quotation-mark">”</p>
+
+                    <p class="lead text-left testimonial">„Vielen Dank für die Produktion unseres internen HR-Videos.
+                        Ihr habt es mal wieder geschafft, dass der thematische Prozess zu einem sinnvollen und einfach
+                        verständlichen Ganzen kommt.“</p>
+
+                    <p class="text-right">— Mirjam Birrer, <strong>SUVA</strong></p>
+                </div>
+                <span class="streamline-60px icon-arrow-68 testimonial-switch test2nav green"></span>
+            </div>
+        </div>
+
+
+        <div class="row" id="testimonial2">
+            <div class="testimonial-container">
+                <span class="streamline-60px icon-arrow-67 testimonial-switch test1nav green"></span>
+
+                <div class="testimonial-cell">
+                    <p class="red text-left quotation-mark">”</p>
+
+                    <p class="lead text-left testimonial">„Vielen Dank für die gute und unkomplizierte Zusammenarbeit.
+                        Die Videos kommen gut an und die Rückmeldungen sind durchwegs positiv.“</p>
+
+                    <p class="text-right">— Martin König, <strong>SBB</strong></p>
+                </div>
+                <span class="streamline-60px icon-arrow-68 testimonial-switch test3nav green"></span>
+            </div>
+        </div>
+
+
+        <div class="row" id="testimonial3">
+            <div class="testimonial-container">
+                <span class="streamline-60px icon-arrow-67 testimonial-switch test2nav green"></span>
+
+                <div class="testimonial-cell">
+                    <p class="red text-left quotation-mark">”</p>
+
+                    <p class="lead text-left testimonial">„Die Zusammenarbeit war sehr angenehm, lehrreich und hat Spass
+                        gemacht. Gerne kommen wir wieder auf Euch zu, wenn wir weitere Themen einfach als Videos erklärt
+                        haben möchten.“</p>
+
+                    <p class="text-right">— Eliane Baumgartner, <strong>Swissaid</strong></p>
+                </div>
+                <span class="streamline-60px icon-arrow-68 testimonial-switch test1nav green"></span>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="spacer-6em"></div>
+                <h4 class="subtitle "><a class="black underline" href="/index/references">
+                        <?= $this->translate('Empfehlungen und Referenzen') ?></a></h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section green-bg pattern-bg">
+    <div class="container big-padding">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h4 class="subtitle "><a class="black underline" href="/offer">
+                        <?= $this->translate('Stellen Sie Ihr eigenes Video zusammen') ?></a></h4>
+            </div>
+        </div>
+    </div>
+</div>
+

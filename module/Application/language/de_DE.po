@@ -2,117 +2,559 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZendSkeletonApplication\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-05 23:45-0700\n"
-"PO-Revision-Date: 2012-07-06 08:18-0700\n"
-"Last-Translator: Evan Coury <me@evancoury.com>\n"
+"POT-Creation-Date: 2014-07-11 01:07+0100\n"
+"PO-Revision-Date: 2014-07-11 01:08+0100\n"
+"Last-Translator: Hans Egg <hansegg@mac.com>\n"
 "Language-Team: ZF Contributors <zf-devteam@zend.com>\n"
-"Language: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../view/layout/layout.phtml:6
-#: ../view/layout/layout.phtml:33
-msgid "Skeleton Application"
+#: ../src/Application/Form/OfferForm.php:21
+#: ../view/application/index/index.phtml:184
+#: ../view/application/index/video-styles.phtml:22
+#: ../view/application/index/video-styles.phtml:139
+#: ../view/application/index/video-styles.phtml:248
+#: ../view/application/index/video-styles.phtml:338
+#: ../view/application/index/video-styles.phtml:398
+msgid "Simplify Erklärvideo"
 msgstr ""
 
-#: ../view/layout/layout.phtml:36
-msgid "Home"
-msgstr "Startseite"
+#: ../src/Application/Form/OfferForm.php:27
+msgid "Animation/Motion Graphics"
+msgstr ""
 
-#: ../view/layout/layout.phtml:50
-msgid "All rights reserved."
-msgstr "Alle Rechte vorbehalten."
+#: ../src/Application/Form/OfferForm.php:32
+#: ../view/application/index/index.phtml:217
+#: ../view/application/index/references.phtml:409
+#: ../view/application/index/video-styles.phtml:52
+#: ../view/application/index/video-styles.phtml:150
+#: ../view/application/index/video-styles.phtml:220
+#: ../view/application/index/video-styles.phtml:229
+#: ../view/application/index/video-styles.phtml:361
+msgid "Realfilm"
+msgstr ""
 
-#: ../view/application/index/index.phtml:2
-#, php-format
-msgid "Welcome to %sZend Framework 2%s"
-msgstr "Willkommen zu dem %sZend Framework 2%s"
+#: ../src/Application/Form/OfferForm.php:37
+msgid "Animation & Realfilm"
+msgstr ""
 
-#: ../view/application/index/index.phtml:3
-#, php-format
-msgid "Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2."
-msgstr "Herzlichen Glückwunsch! Sie haben die %sZF2 Skeleton Application%s erfolgreich installiert und benutzen gerade die Version %s des Zend Frameworks. Dieses Gerüst kann Ihnen als Einstiegspunkt, für Ihre weitere Entwicklung, basierend auf dem Zend Framework 2, dienen."
+#: ../src/Application/Form/OfferForm.php:54
+msgid "Farbe"
+msgstr ""
 
-#: ../view/application/index/index.phtml:4
-msgid "Fork Zend Framework 2 on GitHub"
-msgstr "Fork Zend Framework 2 auf GitHub"
+#: ../src/Application/Form/OfferForm.php:58
+msgid "Einfarbig"
+msgstr ""
 
-#: ../view/application/index/index.phtml:10
-msgid "Follow Development"
-msgstr "Folge der Entwicklung"
+#: ../src/Application/Form/OfferForm.php:59
+#: ../view/application/offer/index.phtml:439
+msgid "Mehrfarbig"
+msgstr ""
 
-#: ../view/application/index/index.phtml:11
-#, php-format
-msgid "Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!"
-msgstr "Das Zend Framework 2 wird z.Z. aktiv weiterentwickelt.  Sollten Sie daran interessiert sein, die Entwicklung von ZF2 zu verfolgen, so bietet Ihnen die offizielle Webseite einen eigens für das Zend Framework 2 eingerichteten Bereich, auf der Sie Verlinkungen zum ZF2 %sWiki%s, %sEntwickler Blog%s, einem %sFehlerverfolgungssystem%s und noch vielem mehr finden. Dieser Bereich ist eine hervorragende Quelle um stets aktuell zu bleiben."
+#: ../src/Application/Form/OfferForm.php:78
+msgid "Vertonung"
+msgstr ""
 
-#: ../view/application/index/index.phtml:12
-msgid "ZF2 Development Portal"
-msgstr "ZF2 Entwickler Portal"
+#: ../src/Application/Form/OfferForm.php:82
+msgid ""
+"Die zusätzliche Sprache beinhaltet Übersetzungen, Anpassungen am Bild "
+"(Text), neues Timing und Projektmanagement."
+msgstr ""
 
-#: ../view/application/index/index.phtml:16
-msgid "Discover Modules"
-msgstr "Entdecken Sie Module"
+#: ../src/Application/Form/OfferForm.php:84
+msgid "ohne professionellen Sprecher"
+msgstr ""
 
-#: ../view/application/index/index.phtml:17
-#, php-format
-msgid "The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2."
-msgstr "Die Community arbeitet momentan an einer Community Seite, welche als Galerie für ZF2 Module dient. Dieses Projekt ist %sauf GitHub%s verfügbar. Die Webseite ist bereits Online und enthält eine Liste mit schon veröffentlichten Modulen für das Zend Framework 2."
+#: ../src/Application/Form/OfferForm.php:85
+msgid "mit professionellem Sprecher"
+msgstr ""
 
-#: ../view/application/index/index.phtml:18
-msgid "Explore ZF2 Modules"
-msgstr "Erkunden Sie ZF2 Module"
+#: ../src/Application/Form/OfferForm.php:91
+msgid "Dauer des Videos"
+msgstr ""
 
-#: ../view/application/index/index.phtml:22
-msgid "Help &amp; Support"
-msgstr "Hilfe &amp; Support"
+#: ../src/Application/Form/OfferForm.php:94
+#: ../src/Application/Form/OfferForm.php:95
+#: ../src/Application/Form/OfferForm.php:96
+#: ../src/Application/Form/OfferForm.php:97
+msgid "Minuten"
+msgstr ""
 
-#: ../view/application/index/index.phtml:23
-#, php-format
-msgid "If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s."
-msgstr "Sollten Sie Hilfe jeglicher Art bei der Entwicklung mit dem Zend Framework 2 benötigen, kontaktieren Sie uns doch einfach über das IRC: %s#zftalk on Freenode%s. Wir freuen uns darauf, Ihnen bei Ihren Fragen zu helfen oder aber auch Ihre Meinung bezüglich der Beta Versionen zu hören. Alternativ können Sie auch die %smailing lists%s abonnieren und Ihre Fragen dort stellen."
+#: ../src/Application/Form/OfferForm.php:114
+#: ../view/application/offer/index.phtml:446
+msgid "Lieferfrist"
+msgstr ""
 
-#: ../view/application/index/index.phtml:24
-msgid "Ping us on IRC"
-msgstr "Schreiben Sie uns im IRC an"
+#: ../src/Application/Form/OfferForm.php:118
+msgid "Normal"
+msgstr ""
 
-#: ../view/error/index.phtml:1
-msgid "An error occurred"
-msgstr "Ein Fehler ist aufgetreten"
+#: ../src/Application/Form/OfferForm.php:119
+msgid "Express"
+msgstr ""
 
-#: ../view/error/index.phtml:8
-msgid "Additional information"
-msgstr "Zusätzliche Information"
+#: ../src/Application/Form/OfferForm.php:124
+#: ../view/application/offer/index.phtml:422
+msgid "Sprachen"
+msgstr ""
 
-#: ../view/error/index.phtml:11
-#: ../view/error/index.phtml:35
-msgid "File"
-msgstr "Datei"
+#: ../src/Application/Form/OfferForm.php:128
+msgid "Deutsch"
+msgstr ""
 
-#: ../view/error/index.phtml:15
-#: ../view/error/index.phtml:39
-msgid "Message"
-msgstr "Meldung"
+#: ../src/Application/Form/OfferForm.php:129
+msgid "Französisch"
+msgstr ""
 
-#: ../view/error/index.phtml:19
-#: ../view/error/index.phtml:43
-#: ../view/error/404.phtml:55
-msgid "Stack trace"
-msgstr "Stapelüberwachung"
+#: ../src/Application/Form/OfferForm.php:130
+msgid "Englisch"
+msgstr ""
 
-#: ../view/error/index.phtml:29
-msgid "Previous exceptions"
-msgstr "Vorherige Ausnahme"
+#: ../src/Application/Form/OfferForm.php:131
+msgid "Italienisch"
+msgstr ""
 
-#: ../view/error/index.phtml:58
-msgid "No Exception available"
-msgstr "Es ist keine Ausnahme verfügbar"
+#: ../src/Application/Form/OfferForm.php:132
+msgid "Andere"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:137
+msgid "Weitere Sprachen"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:142
+#: ../view/application/offer/index.phtml:47
+msgid "Anrede"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:146
+msgid "Herr"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:147
+msgid "Frau"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:152
+#: ../view/application/offer/index.phtml:49
+msgid "Vorname"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:158
+#: ../view/application/offer/index.phtml:51
+msgid "Nachname"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:164
+#: ../view/application/offer/index.phtml:53
+msgid "Emailadresse"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:179
+#: ../view/application/offer/index.phtml:55
+msgid "Firma"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:184
+#: ../view/application/offer/index.phtml:57
+msgid "Webseite"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:189
+#: ../view/application/offer/index.phtml:17
+#: ../view/application/offer/index.phtml:332
+msgid "Beschreibung"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:194
+msgid "Dateien hochladen"
+msgstr ""
+
+#: ../src/Application/Form/OfferForm.php:208
+msgid "Anfrage absenden"
+msgstr ""
+
+#: ../view/application/_partials/sidebar-marketing.phtml:19
+#: ../view/application/index/your-benefits.phtml:12
+msgid "Ihre Vorteile"
+msgstr ""
+
+#: ../view/application/_partials/sidebar-marketing.phtml:23
+msgid "Einsatz&shy;gebiete"
+msgstr ""
+
+#: ../view/application/_partials/sidebar-marketing.phtml:27
+msgid "Video Stile"
+msgstr ""
+
+#: ../view/application/_partials/sidebar-styles.phtml:4
+msgid "Stil 1"
+msgstr ""
+
+#: ../view/application/_partials/sidebar-styles.phtml:7
+msgid "Stil 2"
+msgstr ""
+
+#: ../view/application/_partials/sidebar-styles.phtml:10
+msgid "Stil 3"
+msgstr ""
+
+#: ../view/application/_partials/sidebar-styles.phtml:13
+msgid "Stil 4"
+msgstr ""
+
+#: ../view/application/index/about.phtml:7
+#: ../view/application/index/index.phtml:102 ../view/layout/layout.phtml:73
+msgid "Über uns"
+msgstr ""
+
+#: ../view/application/index/about.phtml:9
+msgid "Kreativ, unkompliziert, kompetent"
+msgstr ""
+
+#: ../view/application/index/about.phtml:11
+msgid "Wir machen Ihr Video"
+msgstr ""
+
+#: ../view/application/index/about.phtml:25
+#: ../view/application/index/index.phtml:311
+msgid "Empfehlungen und Referenzen"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:6
+#: ../view/layout/layout.phtml:70
+msgid "So funktionierts"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:8
+msgid "In 7 Schritten zu Ihrem Video"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:23
+msgid "Der Online Konfigurator"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:39
+msgid "Die Offerte"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:54
+msgid "Briefing und Konzept"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:71
+msgid "Storytelling und Drehbuch"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:91
+msgid "Storyboard"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:110
+msgid "Dreh und Animation"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:132
+msgid "Endfassung und Vermarktung"
+msgstr ""
+
+#: ../view/application/index/how-it-works.phtml:152
+msgid "Zum Online Konfigurator"
+msgstr ""
+
+#: ../view/application/index/implementation-areas.phtml:12
+msgid "Einsatzgebiete"
+msgstr ""
+
+#: ../view/application/index/implementation-areas.phtml:14
+msgid "Video kann alles"
+msgstr ""
+
+#: ../view/application/index/implementation-areas.phtml:20
+msgid "Produkte verkaufen"
+msgstr ""
+
+#: ../view/application/index/implementation-areas.phtml:45
+msgid "Image schärfen"
+msgstr ""
+
+#: ../view/application/index/implementation-areas.phtml:69
+msgid "Prozesse erklären"
+msgstr ""
+
+#: ../view/application/index/implementation-areas.phtml:93
+msgid "Mitarbeitende motivieren"
+msgstr ""
+
+#: ../view/application/index/implementation-areas.phtml:120
+msgid "Spezialisten finden"
+msgstr ""
+
+#: ../view/application/index/implementation-areas.phtml:146
+msgid "E-Learning und Micro-Learning"
+msgstr ""
+
+#: ../view/application/index/implementation-areas.phtml:192
+#: ../view/application/index/index.phtml:323
+#: ../view/application/index/your-benefits.phtml:151
+msgid "Stellen Sie Ihr eigenes Video zusammen"
+msgstr ""
+
+#: ../view/application/index/index.phtml:55
+msgid "Sags mit Video"
+msgstr ""
+
+#: ../view/application/index/index.phtml:61
+#: ../view/application/index/your-benefits.phtml:23
+msgid "Mehr Bekanntheit"
+msgstr ""
+
+#: ../view/application/index/index.phtml:69
+#: ../view/application/index/your-benefits.phtml:64
+msgid "Mehr Traffic"
+msgstr ""
+
+#: ../view/application/index/index.phtml:78
+#: ../view/application/index/your-benefits.phtml:96
+msgid "Mehr Verkaufserfolg"
+msgstr ""
+
+#: ../view/application/index/index.phtml:117
+msgid "individuell"
+msgstr ""
+
+#: ../view/application/index/index.phtml:130
+msgid "preisgünstig"
+msgstr ""
+
+#: ../view/application/index/index.phtml:146
+msgid "kompetent"
+msgstr ""
+
+#: ../view/application/index/index.phtml:165
+msgid "Die Videostile"
+msgstr ""
+
+#: ../view/application/index/index.phtml:201
+#: ../view/application/index/references.phtml:407
+#: ../view/application/index/video-styles.phtml:41
+#: ../view/application/index/video-styles.phtml:112
+#: ../view/application/index/video-styles.phtml:120
+#: ../view/application/index/video-styles.phtml:260
+#: ../view/application/index/video-styles.phtml:350
+msgid "Animation und Motion Graphics"
+msgstr ""
+
+#: ../view/application/index/index.phtml:234
+#: ../view/application/index/references.phtml:411
+#: ../view/application/index/video-styles.phtml:64
+#: ../view/application/index/video-styles.phtml:162
+#: ../view/application/index/video-styles.phtml:272
+#: ../view/application/index/video-styles.phtml:310
+#: ../view/application/index/video-styles.phtml:318
+msgid "Animation und Realfilm"
+msgstr ""
+
+#: ../view/application/index/references.phtml:8 ../view/layout/layout.phtml:71
+msgid "Referenzen"
+msgstr ""
+
+#: ../view/application/index/references.phtml:10
+msgid "Arbeiten, auf die wir stolz sind"
+msgstr ""
+
+#: ../view/application/index/references.phtml:13
+msgid "Und die wir in ähnlicher Art auch gerne für Sie ausführen würden"
+msgstr ""
+
+#: ../view/application/index/references.phtml:59
+msgid "Warum Bio den Hunger besiegt"
+msgstr ""
+
+#: ../view/application/index/references.phtml:62
+msgid "Mit kleinem Video grosse Zusammenhänge aufzeigen"
+msgstr ""
+
+#: ../view/application/index/references.phtml:123
+msgid "Wie verkauft man Video-Conferencing"
+msgstr ""
+
+#: ../view/application/index/references.phtml:126
+msgid "Mit einem Animations-Video"
+msgstr ""
+
+#: ../view/application/index/references.phtml:182
+msgid "Die klassische Kommunikation hat ausgedient"
+msgstr ""
+
+#: ../view/application/index/references.phtml:185
+msgid "Es lebe das Infotainment"
+msgstr ""
+
+#: ../view/application/index/references.phtml:246
+msgid "Denkmal sucht Mieter"
+msgstr ""
+
+#: ../view/application/index/references.phtml:249
+msgid "Wie das neue Kaufleuten neue Leute fand"
+msgstr ""
+
+#: ../view/application/index/references.phtml:306
+msgid "Grosser Job fürs Jobportal"
+msgstr ""
+
+#: ../view/application/index/references.phtml:309
+msgid "Neue Filmsprache sorgt für Begeisterung"
+msgstr ""
+
+#: ../view/application/index/references.phtml:373
+msgid "Trockene Materie flüssig erklärt"
+msgstr ""
+
+#: ../view/application/index/references.phtml:399
+msgid "Unsere Videoprojekte"
+msgstr ""
+
+#: ../view/application/index/references.phtml:405
+msgid "Simplify Erklärvideos"
+msgstr ""
+
+#: ../view/application/index/references.phtml:731
+msgid "Unsere Kunden"
+msgstr ""
+
+#: ../view/application/index/video-styles.phtml:12
+msgid "Videostile"
+msgstr ""
+
+#: ../view/application/index/video-styles.phtml:14
+msgid "Sags mit Video – aber wie"
+msgstr ""
+
+#: ../view/application/index/video-styles.phtml:16
+msgid "4 Videostile stehen zur Auswahl"
+msgstr ""
+
+#: ../view/application/index/video-styles.phtml:72
+msgid "Einfach charmant"
+msgstr ""
+
+#: ../view/application/index/video-styles.phtml:96
+#: ../view/application/index/video-styles.phtml:186
+#: ../view/application/index/video-styles.phtml:297
+#: ../view/application/index/video-styles.phtml:382
+msgid "Vorteile"
+msgstr ""
+
+#: ../view/application/index/video-styles.phtml:172
+msgid "Die Kunst des Storytelling"
+msgstr ""
+
+#: ../view/application/index/video-styles.phtml:281
+msgid "Das klassische Handwerk"
+msgstr ""
+
+#: ../view/application/index/video-styles.phtml:369
+msgid "Stil-Mix nach Ihrem Geschmack"
+msgstr ""
+
+#: ../view/application/index/video-styles.phtml:438
+msgid "Hier gehts zum Konfigurator"
+msgstr ""
+
+#: ../view/application/index/your-benefits.phtml:14
+msgid "Am Puls der Zeit"
+msgstr ""
+
+#: ../view/application/index/your-benefits.phtml:25
+msgid "5 Facts, wieso Sie mit Videos besser in Erinnerung bleiben."
+msgstr ""
+
+#: ../view/application/index/your-benefits.phtml:66
+msgid ""
+"3 Tricks, wie Sie dank Videos deutlich bessere Klickraten auf Ihrer Page "
+"erzielen."
+msgstr ""
+
+#: ../view/application/index/your-benefits.phtml:99
+msgid ""
+"6 Tipps, wie Sie mit Videos Ihr Unternehmen und Ihre Produkte nach innen und "
+"aussen besser verkaufen."
+msgstr ""
+
+#: ../view/application/offer/confirm.phtml:8
+msgid "Gewählter Videostil"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:15
+msgid "Beschreibung und Dateien"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:21
+#: ../view/application/offer/index.phtml:29
+#: ../view/application/offer/index.phtml:38
+msgid "Datei"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:70 ../view/layout/layout.phtml:75
+msgid "Konfigurator"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:72
+msgid "Zackzack zu Ihrem Film"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:74
+msgid ""
+"Stellen Sie Ihr individuelles Video zusammen und erhalten Sie eine Offerte"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:89
+msgid "Welchen Stil möchten Sie einsetzen"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:185
+msgid "Optionen"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:280
+msgid "Ihre persönlichen Daten"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:388
+msgid "Kostenschätzung"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:392
+msgid "Richtpreis"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:413
+msgid "Grundpreis"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:415
+msgid "Minutes"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:432
+msgid "Sprecher"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:452
+msgid "Arbeitstage"
+msgstr ""
+
+#: ../view/application/offer/index.phtml:461
+msgid "Rufen Sie an"
+msgstr ""
 
 #: ../view/error/404.phtml:1
 msgid "A 404 error occurred"
@@ -120,23 +562,29 @@ msgstr "Es trat ein 404 Fehler auf"
 
 #: ../view/error/404.phtml:10
 msgid "The requested controller was unable to dispatch the request."
-msgstr "Der angeforderte Controller war nicht in der Lage die Anfrage zu verarbeiten."
+msgstr ""
+"Der angefofferte Controller war nicht in der Lage die Anfrage zu verarbeiten."
 
 #: ../view/error/404.phtml:13
-msgid "The requested controller could not be mapped to an existing controller class."
-msgstr "Der angeforderte Controller konnte keiner Controller Klasse zugeordnet werden."
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+"Der angefofferte Controller konnte keiner Controller Klasse zugeordnet "
+"werden."
 
 #: ../view/error/404.phtml:16
 msgid "The requested controller was not dispatchable."
-msgstr "Der angeforderte Controller ist nicht aufrufbar."
+msgstr "Der angefofferte Controller ist nicht aufrufbar."
 
 #: ../view/error/404.phtml:19
 msgid "The requested URL could not be matched by routing."
-msgstr "Für die angeforderte URL konnte keine Übereinstimmung gefunden werden."
+msgstr "Für die angefofferte URL konnte keine Übereinstimmung gefunden werden."
 
 #: ../view/error/404.phtml:22
 msgid "We cannot determine at this time why a 404 was generated."
-msgstr "Zu diesem Zeitpunkt ist es uns nicht möglich zu bestimmen, warum ein 404 Fehler aufgetreten ist."
+msgstr ""
+"Zu diesem Zeitpunkt ist es uns nicht möglich zu bestimmen, warum ein 404 "
+"Fehler aufgetreten ist."
 
 #: ../view/error/404.phtml:34
 msgid "Controller"
@@ -147,7 +595,141 @@ msgstr "Controller"
 msgid "resolves to %s"
 msgstr "wird aufgelöst in %s"
 
-#: ../view/error/404.phtml:51
-msgid "Exception"
-msgstr "Ausnahme"
+#: ../view/error/404.phtml:53 ../view/error/index.phtml:8
+msgid "Additional information"
+msgstr "Zusätzliche Information"
 
+#: ../view/error/404.phtml:56 ../view/error/404.phtml:80
+#: ../view/error/index.phtml:11 ../view/error/index.phtml:35
+msgid "File"
+msgstr "Datei"
+
+#: ../view/error/404.phtml:60 ../view/error/404.phtml:84
+#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
+msgid "Message"
+msgstr "Meldung"
+
+#: ../view/error/404.phtml:64 ../view/error/404.phtml:88
+#: ../view/error/index.phtml:19 ../view/error/index.phtml:43
+msgid "Stack trace"
+msgstr "Stapelüberwachung"
+
+#: ../view/error/404.phtml:74 ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "Vorherige Ausnahme"
+
+#: ../view/error/404.phtml:103 ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "Es ist keine Ausnahme verfügbar"
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "Ein Fehler ist aufgetreten"
+
+#: ../view/layout/layout.phtml:6
+msgid "Nemuk Video"
+msgstr ""
+
+#: ../view/layout/layout.phtml:69
+msgid "Home"
+msgstr "Startseite"
+
+#: ../view/layout/layout.phtml:72
+msgid "Video Marketing"
+msgstr ""
+
+#: ../view/layout/layout.phtml:121
+msgid "Impressum"
+msgstr ""
+
+#: ../view/layout/layout.phtml:123
+msgid "Partner"
+msgstr ""
+
+#: ../view/layout/layout.phtml:124
+msgid "Login"
+msgstr ""
+
+#: ../view/layout/layout.phtml:139
+msgid "Languages"
+msgstr "Sprachen"
+
+#~ msgid "All rights reserved."
+#~ msgstr "Alle Rechte vorbehalten."
+
+#~ msgid "Welcome to %sZend Framework 2%s"
+#~ msgstr "Willkommen zu dem %sZend Framework 2%s"
+
+#~ msgid ""
+#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
+#~ "Application%s. You are currently running Zend Framework version %s. This "
+#~ "skeleton can serve as a simple starting point for you to begin building "
+#~ "your application on ZF2."
+#~ msgstr ""
+#~ "Herzlichen Glückwunsch! Sie haben die %sZF2 Skeleton Application%s "
+#~ "erfolgreich installiert und benutzen gerade die Version %s des Zend "
+#~ "Frameworks. Dieses Gerüst kann Ihnen als Einstiegspunkt, für Ihre weitere "
+#~ "Entwicklung, basierend auf dem Zend Framework 2, dienen."
+
+#~ msgid "Fork Zend Framework 2 on GitHub"
+#~ msgstr "Fork Zend Framework 2 auf GitHub"
+
+#~ msgid "Follow Development"
+#~ msgstr "Folge der Entwicklung"
+
+#~ msgid ""
+#~ "Zend Framework 2 is under active development. If you are interested in "
+#~ "following the development of ZF2, there is a special ZF2 portal on the "
+#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
+#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
+#~ "for staying up to date with the latest developments!"
+#~ msgstr ""
+#~ "Das Zend Framework 2 wird z.Z. aktiv weiterentwickelt.  Sollten Sie daran "
+#~ "interessiert sein, die Entwicklung von ZF2 zu verfolgen, so bietet Ihnen "
+#~ "die offizielle Webseite einen eigens für das Zend Framework 2 "
+#~ "eingerichteten Bereich, auf der Sie Verlinkungen zum ZF2 %sWiki%s, "
+#~ "%sEntwickler Blog%s, einem %sFehlerverfolgungssystem%s und noch vielem "
+#~ "mehr finden. Dieser Bereich ist eine hervorragende Quelle um stets "
+#~ "aktuell zu bleiben."
+
+#~ msgid "ZF2 Development Portal"
+#~ msgstr "ZF2 Entwickler Portal"
+
+#~ msgid "Discover Modules"
+#~ msgstr "Entdecken Sie Module"
+
+#~ msgid ""
+#~ "The community is working on developing a community site to serve as a "
+#~ "repository and gallery for ZF2 modules. The project is available %son "
+#~ "GitHub%s. The site is currently live and currently contains a list of "
+#~ "some of the modules already available for ZF2."
+#~ msgstr ""
+#~ "Die Community arbeitet momentan an einer Community Seite, welche als "
+#~ "Galerie für ZF2 Module dient. Dieses Projekt ist %sauf GitHub%s "
+#~ "verfügbar. Die Webseite ist bereits Online und enthält eine Liste mit "
+#~ "schon veröffentlichten Modulen für das Zend Framework 2."
+
+#~ msgid "Explore ZF2 Modules"
+#~ msgstr "Erkunden Sie ZF2 Module"
+
+#~ msgid "Help &amp; Support"
+#~ msgstr "Hilfe &amp; Support"
+
+#~ msgid ""
+#~ "If you need any help or support while developing with ZF2, you may reach "
+#~ "us via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
+#~ "feedback you may have regarding the beta releases. Alternatively, you may "
+#~ "subscribe and post questions to the %smailing lists%s."
+#~ msgstr ""
+#~ "Sollten Sie Hilfe jeglicher Art bei der Entwicklung mit dem Zend "
+#~ "Framework 2 benötigen, kontaktieren Sie uns doch einfach über das IRC: "
+#~ "%s#zftalk on Freenode%s. Wir freuen uns darauf, Ihnen bei Ihren Fragen zu "
+#~ "helfen oder aber auch Ihre Meinung bezüglich der Beta Versionen zu hören. "
+#~ "Alternativ können Sie auch die %smailing lists%s abonnieren und Ihre "
+#~ "Fragen dort stellen."
+
+#~ msgid "Ping us on IRC"
+#~ msgstr "Schreiben Sie uns im IRC an"
+
+#~ msgid "Exception"
+#~ msgstr "Ausnahme"

@@ -1,55 +1,226 @@
-<?php echo $this->doctype(); ?>
+<?= $this->doctype() ?>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <?php echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <?= $this->headTitle($this->translate('Nemuk Video', 'Application', 'ch_DE'))->setSeparator(' - ')->setAutoEscape(false) ?>
 
-        <?php echo $this->headMeta()
-            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
-            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
-        ?>
+    <?=
+    $this->headMeta()
+        ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+        ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ->appendName('description', 'Vermitteln Sie Ihre Botschaft mit einem Video. Mit der Erfahrung von über 100 Videos ist Nemuk Video Ihr Partner für grossartige, individuelle und preisgünstige Videos.')
+    ?>
 
-        <!-- Le styles -->
-        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
-                        ->prependStylesheet($this->basePath() . '/css/style.css')
-                        ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
-                        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+    <!-- Styles -->
+    <?=
+    $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+        ->prependStylesheet($this->basePath() . '/css/video.css')
+        ->prependStylesheet($this->basePath() . '/css/style.css')
+        ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css')
+        ->prependStylesheet($this->basePath() . '/css/streamline-24px.css')
+        ->prependStylesheet($this->basePath() . '/css/streamline-24px-filled-in.css')
+        ->prependStylesheet($this->basePath() . '/css/streamline-30px.css')
+        ->prependStylesheet($this->basePath() . '/css/streamline-30px-filled-in.css')
+    ?>
 
-        <!-- Scripts -->
-        <?php echo $this->headScript()
-            ->prependFile($this->basePath() . '/js/bootstrap.min.js')
-            ->prependFile($this->basePath() . '/js/jquery.min.js')
-            ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
-            ->prependFile($this->basePath() . '/js/html5shiv.js',   'text/javascript', array('conditional' => 'lt IE 9',))
-        ; ?>
+    <!-- Other Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link
+        href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath('img/zf2-logo.png') ?>" alt="Zend Framework 2"/>&nbsp;<?php echo $this->translate('Skeleton Application') ?></a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </nav>
+    <!-- Scripts -->
+    <?=
+    $this->headScript()
+        ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+        ->prependFile($this->basePath() . '/js/jquery-1.11.1.min.js')
+        ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ->prependFile($this->basePath() . '/js/html5shiv.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ->appendFile($this->basePath() . '/js/offerForm.js')
+        ->appendFile($this->basePath() . '/js/onlinevideo.js')
+    ?>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div id="nav-container" class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display  style="background-image: url('/img/nemuk_video_10222C.png')" -->
+        <div class="navbar-header">
+            <button type="button" id="navbar-button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" title="NEMUK. VIDEO">
+                <img id="nemuk_logo" src="/img/nemuk_video_10222C.png" class="hidden-sm" alt="NEMUK. VIDEO">
+                <img id="nemuk_logo-small" src="/img/nemuk_video_10222C.png" class="visible-sm" alt="NEMUK. VIDEO">
+                <!--                <img id="nemuk_favicon" src="/img/favicon.ico" class="visible-sm" alt="N.">-->
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden-xs hidden-sm"><a href="/"><?= $this->translate('Home') ?></a></li>
+                <li><a href="/index/how-it-works"><?= $this->translate('So funktionierts') ?></a></li>
+                <li><a href="/index/references"><?= $this->translate('Referenzen') ?></a></li>
+                <li><a href="/index/your-benefits"><?= $this->translate('Video Marketing') ?></a></li>
+                <li><a href="/index/about"><?= $this->translate('Über uns') ?></a></li>
+                <li><a href="/offer">
+                        <span class="hidden-sm"><?= $this->translate('Konfigurator') ?></span>
+                        <span class="glyphicon glyphicon-cog visible-sm"></span>
+                    </a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- the view where included here -->
+<?= $this->content; ?>
+<footer>
+    <div class="section black-bg">
         <div class="container">
-            <?php echo $this->content; ?>
-            <hr>
-            <footer>
-                <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
-            </footer>
-        </div> <!-- /container -->
-        <?php echo $this->inlineScript() ?>
-    </body>
+            <div class="row">
+                <div class="col-md-12">
+                    <p><a href="/">
+                            <img src="/img/nemuk_video_F8F9E8.png" width="230" class="img-responsive"
+                                 alt="NEMUK. VIDEO"/></a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <address class="red">Kanzleistrasse 53<br/>
+                        8004 Zürich<br/>
+                        044 246 70 94<br/>
+                        <a class="red" href="mailto:video@nemuk.com">video@nemuk.com</a><br/>
+                        <a class="red" href="http://www.nemuk.com" target="_blank">www.nemuk.com</a>
+                    </address>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <ul class="list-inline">
+                        <li><a href="https://twitter.com/Nemuk" target="_blank" title="Twitter"><span
+                                    class="socicon red">a</span></a></li>
+                        <li><a href="http://www.facebook.com/NemukAG" target="_blank" title="Facebook"><span
+                                    class="socicon red">b</span></a></li>
+                        <li><a href="https://plus.google.com/104485028123046799140/" target="_blank"
+                               title="Google+"><span class="socicon red">c</span></a></li>
+                        <li><a href="http://www.youtube.com/user/nemukvideo" target="_blank" title="Youtube"><span
+                                    class="socicon red">r</span></a></li>
+                        <li><a href="http://vimeo.com/nemuk" target="_blank" title="Vimeo"><span
+                                    class="socicon red">s</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 text-left">
+                    <div class="subnav">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="http://www.nemuk.com/impressum/"
+                                   target="_blank"><?= $this->translate('Impressum') ?></a></li>
+                            <!--
+                            <li><a href="/user/login"><?= $this->translate('Partner') ?></a></li>
+                            <li><a href="/user/login"><?= $this->translate('Login') ?></a></li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /container -->
+<?php
+if (substr($_SERVER['HTTP_HOST'], -5) == 'local') {
+    ?>
+    <div class="container-fluid">
+    <pre>
+        <?= var_export($this->translate('Languages', __NAMESPACE__, 'de')); ?>
+        <?= isset($_SESSION) ? var_export($_SESSION, true) : 'no session data' ?>
+    </pre>
+    </div>
+<?php
+}
+?>
+<?= $this->inlineScript() // use this helper to include js-files http://framework.zend.com/manual/2.2/en/modules/zend.view.helpers.inline-script.html  ?>
+
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PLD4LH"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function (w, d, s, l, i)
+    {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PLD4LH');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Social plugins -->
+<script>!function (d, s, id)
+    {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");</script>
+
+<div id="fb-root"></div>
+<script>(function (d, s, id)
+    {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script type="text/javascript">
+    window.___gcfg = {lang: 'de'};
+
+    (function ()
+    {
+        var po = document.createElement('script');
+        po.type = 'text/javascript';
+        po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(po, s);
+    })();
+</script>
+<!-- End social plugins -->
+
+
+<!-- Start of Async HubSpot Analytics Code -->
+<script type="text/javascript">
+    (function (d, s, i, r)
+    {
+        if (d.getElementById(i)) {
+            return;
+        }
+        var n = d.createElement(s), e = d.getElementsByTagName(s)[0];
+        n.id = i;
+        n.src = '//js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/418619.js';
+        e.parentNode.insertBefore(n, e);
+    })(document, "script", "hs-analytics", 300000);
+</script>
+<!-- End of Async HubSpot Analytics Code -->
+
+</body>
 </html>
